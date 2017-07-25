@@ -118,7 +118,7 @@ body{
 /*----Блок с контентом (текст)----*/
 
 .content{
-    width: 625px;
+    width: 678px;
     font-size: 13px;
     line-height: 1.6em;
     color: #2c2c2c;
@@ -126,6 +126,7 @@ body{
     margin-top: 40px;
     padding: 0 auto;
     float: right;
+    padding: 0 26.5px;
 }
 
 /*----Нижнее меню ("подвал сайта")----*/
