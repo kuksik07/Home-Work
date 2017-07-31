@@ -1,4 +1,4 @@
-*{
+*, :hover, :before, :after{
     box-sizing: border-box;
 }
 
@@ -16,13 +16,27 @@ p{
     font-family: Tahoma, sans-serif;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
 .container{
     width: 964px;
     margin: 0 auto;
     min-height: 100%;
     padding: 4px 70px 40px;
     background: #000 url("../images/background.jpg") no-repeat center center;
-
+    background-size: 100% 100%;
 }
 
 .header{
@@ -34,7 +48,7 @@ p{
     height: 147px;
     padding: 75px 0 17px;
     display: inline-block;
-    background: url(../images/logo-palm.png) no-repeat right center;
+    background: url("../images/logo-palm.png") no-repeat right center;
 }
 
 .logo p{
@@ -110,20 +124,9 @@ p{
     background-size: 100% 100%;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    zoom: 1;
-}
-
 .container{
     position: relative;
+    min-height: 100%;
 }
 
 .content-countries{
@@ -140,9 +143,6 @@ p{
     position: absolute;
     left: 0;
     bottom: 30px;
-    padding-left: inherit;
-    padding-right: inherit;
-
 }
 
 
