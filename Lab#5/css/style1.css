@@ -1,0 +1,122 @@
+*, :before, :after, :hover{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: url("../images/Background.jpg") no-repeat center;
+    background-size: cover;
+    font-family: "Tahoma", sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.header a, .header p{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    font-size: 0;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.header{
+    margin: 0 -9999px;
+    padding: 0 9999px;
+    height: 35px;
+    background-color: #074c89;
+}
+
+.header ul{
+    float: right;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul:last-of-type a{
+    line-height: 35px;
+}
+
+ul li a, ul li p{
+    display: inline-block;
+    padding: 0 10px 0 15px;
+    color: #60b5ed;
+}
+
+ul:first-of-type a, ul:first-of-type p, ul li a:hover{
+    color: #fff;
+}
+
+ul:first-of-type li:last-child a{
+    text-decoration: underline;
+    padding: 0;
+    display: inline;
+}
+
+ul:first-of-type::before{
+    content: " ";
+    border-left: #56a2dc 1px solid;
+    /*padding: 8px 0 6px;*/
+    margin: 0 10px 0 10px;
+}
+
+ul:first-of-type li:first-of-type a::before {
+    content: " ";
+    display: inline-block;
+    height: 27px;
+    width: 25px;
+    background: url("../images/flag.png") center no-repeat;
+    margin-right: 10px;
+
+}
+
+
+ul:first-of-type li a, ul:first-of-type li p{
+    line-height: 33px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+}
+
+ul:first-of-type li:first-child a:hover, ul:first-of-type li p:hover{
+    background: linear-gradient(to top, #2e7ac4, #4faedb);
+    border: 1px solid #479bd4;
+    border-radius: 1px;
+    color: #fff;
+}
+
+ul:first-of-type li:last-child a:hover{
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+}
+
+ul:last-of-type li a:hover{
+    font-weight: bold;
+    background-color: #4eabda;
+}

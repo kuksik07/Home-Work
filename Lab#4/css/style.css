@@ -87,6 +87,10 @@ ul{
     right: 0;
 }
 
+.countries .country-photo:last-child{
+    margin: 0;
+}
+
 .country-photo a{
     display: inline-block;
     color: inherit;
